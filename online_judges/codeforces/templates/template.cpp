@@ -1,4 +1,6 @@
 #include <iostream>
+#include <unordered_set>
+#include <unordered_map>
 #include <cstdio>
 #include <vector>
 #include <cmath>
@@ -19,9 +21,9 @@ using namespace std;
 #define REMOVE_FIRST(a) (a).erase((a).begin())
 #define REMOVE_LAST(a) (a).erase(--(a).end())
 #define LAST(a) (--(a).end())
-#define PRINT_ALL(a) for(typeof((a).begin()) it = (a).begin(); it != (a).end(); it++ ) printf("%d ", *it);
+#define PRINT_ALL(a) for(decltype((a).begin()) it = (a).begin(); it != (a).end(); it++ ) printf("%d ", *it);
 #define ALL(t) t.begin(),t.end()
-#define FOREACH(i,t) for (typeof(t.begin()) i=t.begin(); i!=t.end(); i++)
+#define FOREACH(i,t) for (decltype(t.begin()) i=t.begin(); i!=t.end(); i++)
 #define REP(i,a,b) for(int (i)=(a);(i)<=(b);++i)
 #define REPD(i,a,b) for(int (i)=(a); (i)>=(b);--i)
 #define FOR(i,n) for(int (i)=0;(i)<(n);++(i))
